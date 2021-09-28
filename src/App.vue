@@ -1,4 +1,6 @@
 <script>
+  const prepare = cpf => cpf.trim().split('').filter(i => !['.', '-', ' '].includes(i)).map(Number)
+  console.log(prepare('047.438.449-75'))
   export default {
     data () {
       return {
